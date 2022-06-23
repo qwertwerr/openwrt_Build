@@ -38,7 +38,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [Lean]
+        target: [Youku]
     
     steps:
     - name: 检查
@@ -91,6 +91,7 @@ jobs:
       env:
         CONFIG_FILE: '${{matrix.target}}.config'
       run: |
+        echo "$CONFIG_FILE"
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x ./customize.sh && ./customize.sh
         cd openwrt
