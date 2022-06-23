@@ -38,7 +38,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [Youku]
+        target: [Lean]
     
     steps:
     - name: 检查
