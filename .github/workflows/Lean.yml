@@ -93,7 +93,7 @@ jobs:
       run: |
         echo "CONFIG_TARGET_ramips=y"> $CONFIG_FILE
         echo "CONFIG_TARGET_ramips_mt7620=y">> $CONFIG_FILE
-        echo "CONFIG_TARGET_ramips_mt7620_DEVICE_youku-yk1=y">> $CONFIG_FILE
+        echo "CONFIG_TARGET_ramips_mt7620_DEVICE_youku_yk-l1=y">> $CONFIG_FILE
         echo "CONFIG_TARGET_IMAGES_GZIP=y">> $CONFIG_FILE
         echo "CONFIG_PACKAGE_kmod-cfg80211=y">> $CONFIG_FILE
         echo "CONFIG_PACKAGE_kmod-mac80211=y">> $CONFIG_FILE
